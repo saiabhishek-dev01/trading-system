@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets
+.env
+*.key
+
+# Runtime data (trades, logs, caches, reports)
+data/
+
+# Kill switch flag
+KILL
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

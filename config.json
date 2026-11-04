@@ -1,0 +1,77 @@
+{
+  "investment_value": 100000,
+  "mode": "PAPER",
+  "universe": [
+    "RELIANCE",
+    "HDFCBANK",
+    "ICICIBANK",
+    "INFY",
+    "TCS",
+    "SBIN",
+    "AXISBANK",
+    "KOTAKBANK",
+    "LT",
+    "ITC",
+    "BHARTIARTL",
+    "HINDUNILVR",
+    "BAJFINANCE",
+    "MARUTI",
+    "SUNPHARMA",
+    "TATASTEEL",
+    "M&M",
+    "NTPC",
+    "TITAN",
+    "ULTRACEMCO"
+  ],
+  "risk": {
+    "risk_per_trade_pct": 1.0,
+    "daily_loss_limit_pct": 2.0,
+    "max_open_positions": 5,
+    "max_exposure_per_stock_pct": 20.0,
+    "max_entries_per_stock_per_day": 1
+  },
+  "strategy": {
+    "name": "orb",
+    "ema_fast": 9,
+    "ema_slow": 21,
+    "rsi_period": 14,
+    "atr_period": 14,
+    "breakout_lookback_bars": 3,
+    "long_rsi_min": 55,
+    "long_rsi_max": 75,
+    "short_rsi_min": 25,
+    "short_rsi_max": 45,
+    "stop_atr_mult": 1.0,
+    "min_stop_pct": 0.3,
+    "target_r": 2,
+    "orb_minutes": 30,
+    "orb_entry_until": "13:00",
+    "orb_max_range_pct": 1.5
+  },
+  "session": {
+    "no_new_entries_after": "15:00",
+    "square_off_at": "15:15",
+    "poll_seconds": 60
+  },
+  "costs": {
+    "slippage_pct": 0.05,
+    "brokerage_pct": 0.03,
+    "brokerage_cap_per_order": 20,
+    "stt_sell_pct": 0.025,
+    "exchange_txn_pct": 0.00297,
+    "sebi_per_crore": 10,
+    "gst_pct": 18,
+    "stamp_buy_pct": 0.003
+  },
+  "auto": {
+    "strategy": "monthly_momentum",
+    "slots": 10,
+    "loop_seconds": 300,
+    "regime_filter": true
+  },
+  "live": {
+    "enabled": false,
+    "investment_value": 0,
+    "max_order_value": 15000
+  }
+}
